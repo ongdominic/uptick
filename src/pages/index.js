@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Images from "../images";
 
 const {
@@ -43,10 +42,39 @@ const styles = {
   studypic: {
     maxWidth: "400px"
   },
+  centeralign: {
+    textAlign: "center"
+  },
   icon: {
     maxWidth: "60%",
     align: "center"
   }
+};
+
+const buttonStyles = {
+  default: {
+    background: "#F2F2F2",
+    height: "50px",
+    width: "200px",
+    fontSize: "15px",
+    fontWeight: "bold",
+    borderRadius: "30px"
+  }
+};
+
+const MyOwnButton = props => {
+  const { text = "Button", style = {} } = props;
+  return (
+    <button
+      style={{
+        ...buttonStyles.default,
+        ...props.style,
+        ...style
+      }}
+    >
+      {text}
+    </button>
+  );
 };
 
 const Navigation = () => {
@@ -70,6 +98,26 @@ const Navigation = () => {
       <div style={{ flex: 1 }}>
         <h4>BLOG</h4>
       </div>
+    </div>
+  );
+};
+
+const Banner = () => {
+  return (
+    <div>
+      <img
+        style={{
+          maxWidth: "100%"
+        }}
+        src={Heroimage}
+        alt=""
+      />
+      <h1>UpTick</h1>
+      <h3>
+        We love data and the work we do. We work closely with our clients to
+        deliver the best possible solutions for their needs.
+      </h3>
+      <MyOwnButton text="Contact us today" style={{}} />
     </div>
   );
 };
@@ -113,32 +161,6 @@ const Expertise = () => {
   );
 };
 
-const buttonStyles = {
-  default: {
-    background: "#F2F2F2",
-    height: "50px",
-    width: "200px",
-    fontSize: "15px",
-    fontWeight: "bold",
-    borderRadius: "30px"
-  }
-};
-
-const MyOwnButton = props => {
-  const { text = "Button", style = {} } = props;
-  return (
-    <button
-      style={{
-        ...buttonStyles.default,
-        ...props.style,
-        ...style
-      }}
-    >
-      {text}
-    </button>
-  );
-};
-
 const DSCourse = () => {
   return (
     <div style={styles.two}>
@@ -163,22 +185,24 @@ const DSCourse = () => {
   );
 };
 
+const Contact = () => {
+  return (
+    <div>
+      <h4>Find out how we can help you today! </h4>
+      <p style={styles.centeralign}>Email: info@uptick.com </p>
+      <p style={styles.centeralign}> Phone: +65 1234 5678 </p>
+      <p style={styles.centeralign}>
+        <em>Ask for our case studies</em>
+      </p>
+    </div>
+  );
+};
+
 const Main = () => (
   <div>
     <Navigation />
-    <img
-      style={{
-        maxWidth: "100%"
-      }}
-      src={Heroimage}
-      alt=""
-    />
-    <h1>UpTick</h1>
-    <h3>
-      We love data and the work we do. We work closely with our clients to
-      deliver the best possible solutions for their needs.
-    </h3>
-    <MyOwnButton text="Contact us today" style={{}} />
+
+    <Banner />
 
     <h2>EXPERTISE</h2>
 
@@ -191,6 +215,8 @@ const Main = () => (
     <h2>TEAM</h2>
 
     <h2>CONTACT</h2>
+
+    <Contact />
   </div>
 );
 
