@@ -1,7 +1,9 @@
 import React from "react";
 import Images from "../images";
 
-const { Logo, Heroimage , Learning, Infrastructure, Analytics, Modeling } = Images;
+const { Logo, Heroimage, Learning, Infrastructure, Analytics, Modeling } = Images;
+
+// const Logo = Images.Logo;
 
 const styles = {
   one: {
