@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import Images from "../images";
 
 const {
@@ -111,11 +112,23 @@ const BodyContent = () => {
   );
 };
 
+const buttonStyles = {
+  default: {
+    background: "#F2F2F2",
+    height: "50px",
+    width: "200px",
+    fontSize: "15px",
+    fontWeight: "bold",
+    borderRadius: "30px"
+  }
+};
+
 const MyOwnButton = props => {
   const { text = "Button", style = {} } = props;
   return (
     <button
       style={{
+        ...buttonStyles.default,
         ...props.style,
         ...style
       }}
@@ -140,17 +153,7 @@ const DSCourse = () => {
           Robinson Road, Level 9. Do reach out if you are interested; at the
           moment, we are at part 8.
         </p>
-        <MyOwnButton
-          text="Read more"
-          style={{
-            background: "#F2F2F2",
-            height: "50px",
-            width: "200px",
-            fontSize: "15px",
-            fontWeight: "bold",
-            borderRadius: "30px"
-          }}
-        />
+        <MyOwnButton text="Read more" style={{}} />
       </div>
       <div>
         <img style={styles.studypic} src={Course} alt="" />
@@ -169,6 +172,12 @@ const Main = () => (
       src={Heroimage}
       alt=""
     />
+    <h1>UpTick</h1>
+    <h3>
+      We love data and the work we do. We work closely with our clients to
+      deliver the best possible solutions for their needs.
+    </h3>
+    <MyOwnButton text="Contact us today" style={{}} />
     <h2>EXPERTISE</h2>
     <BodyContent />
 

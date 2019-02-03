@@ -5,6 +5,7 @@ import Learning from "./learning.png";
 import Analytics from "./analytics.png";
 import Infrastructure from "./infrastructure.png";
 import Course from "./course.png";
+import Fulllogo from "./fulllogo.png";
 import Shuming from "./shumingpeh.png";
 import Timothy from "./timothy.png";
 
@@ -20,6 +21,7 @@ export default {
   Analytics,
   Infrastructure,
   Course,
+  Fulllogo,
   Shuming,
   Timothy
 };
