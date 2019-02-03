@@ -12,28 +12,23 @@ const {
   Fulllogo
 } = Images;
 
-// const Logo = Images.Logo;
-
 const styles = {
-  one: {
+  navi: {
     display: "flex",
-    flexDirection: "row",
-    alightItem: "center"
+    flexDirection: "row"
   },
   two: {
     display: "flex",
     flexDirection: "row",
-    maxWidth: "1280px",
-    position: "center"
+    marginLeft: "auto",
+    marginRight: "auto",
+    maxWidth: "80%"
   },
   three: {
-    flex: 1,
-    paddingLeft: "90px",
-    paddingRight: "50px"
+    flex: 1
   },
   four: {
-    flex: 1,
-    paddingRight: "50px"
+    flex: 1
   },
   five: {
     flex: 1,
@@ -47,7 +42,7 @@ const styles = {
   },
   icon: {
     maxWidth: "60%",
-    align: "center"
+    textAlign: "center"
   }
 };
 
@@ -79,24 +74,22 @@ const MyOwnButton = props => {
 
 const Navigation = () => {
   return (
-    <div style={styles.one}>
+    <div style={styles.navi}>
       <div style={{ flex: 1 }}>
-        <img style={{ maxWidth: "100px" }} src={Logo} alt="" />
+        <img
+          style={{ maxWidth: "100px", textAlign: "left" }}
+          src={Logo}
+          alt=""
+        />
       </div>
-      <div style={{ flex: 1 }}>
-        <h4>EXPERTISE</h4>
-      </div>
-      <div style={{ flex: 1 }}>
-        <h4>DATA SCIENCE COURSE</h4>
-      </div>
-      <div style={{ flex: 1 }}>
-        <h4>TEAM</h4>
-      </div>
-      <div style={{ flex: 1 }}>
-        <h4>CONTACT</h4>
-      </div>
-      <div style={{ flex: 1 }}>
-        <h4>BLOG</h4>
+      <div style={{ flex: 1, textAlign: "right" }}>
+        <div style={styles.navi}>
+          <h4>EXPERTISE</h4>
+          <h4>DATA SCIENCE COURSE</h4>
+          <h4>TEAM</h4>
+          <h4>CONTACT</h4>
+          <h4>BLOG</h4>
+        </div>
       </div>
     </div>
   );
