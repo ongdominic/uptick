@@ -299,7 +299,13 @@ const TeamMembers = () => {
         >
           <img style={{ maxWidth: "240px" }} src={Shuming} alt="" />
           <h5>Peh Shu Ming</h5>
-          <p>
+          <p
+            style={{
+              maxWidth: "80%",
+              marginLeft: "auto",
+              marginRight: "auto"
+            }}
+          >
             I am a Data Scientist at Skyscanner, overlooking its non-flight
             verticals, and currently working on predictive models for user
             behavior and SEO ranking. For more information, check out my
@@ -314,7 +320,13 @@ const TeamMembers = () => {
         >
           <img style={{ maxWidth: "240px" }} src={Timothy} alt="" />
           <h5>Timothy Ong</h5>
-          <p>
+          <p
+            style={{
+              maxWidth: "80%",
+              marginLeft: "auto",
+              marginRight: "auto"
+            }}
+          >
             {" "}
             I am currently a Data Analyst at Shopee, an e-commerce company. I am
             experienced in building and maintaining data pipelines, data
@@ -342,6 +354,23 @@ const Contact = () => {
   );
 };
 
+const Footer = () => {
+  return (
+    <div
+      style={{
+        marginTop: "100px",
+        marginLeft: "15%"
+      }}
+    >
+      <h6>
+        Designed and developed by Dominic. Icons by freepix from Flaticon.{" "}
+        <br />
+        UpTick (c) 2019. All rights reserved.
+      </h6>
+    </div>
+  );
+};
+
 const Main = () => (
   <div>
     <Navigation />
@@ -354,6 +383,7 @@ const Main = () => (
     <TeamMembers />
     <ColoredLine color="rgb(59 59 59)" />
     <Contact />
+    <Footer />
   </div>
 );
 
