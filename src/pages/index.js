@@ -63,7 +63,7 @@ const buttonStyles = {
     height: "50px",
     width: "200px",
     fontSize: "15px",
-    fontWeight: "bold",
+    fontWeight: "medium",
     borderRadius: "30px",
     fontFamily: "Montserrat",
     marginTop: "20px"
@@ -89,7 +89,11 @@ const Navigation = () => {
   return (
     <div style={styles.navi}>
       <div style={{ flex: 1 }}>
-        <img style={{ maxWidth: "100px" }} src={Logo} alt="" />
+        <img
+          style={{ maxWidth: "100px", marginLeft: "55px" }}
+          src={Logo}
+          alt=""
+        />
       </div>
       <div style={{ flex: 1 }}>
         <div style={styles.navi}>
