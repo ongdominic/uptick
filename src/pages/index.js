@@ -15,34 +15,45 @@ const {
 const styles = {
   navi: {
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  one: {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: "auto",
+    marginRight: "auto",
+    maxWidth: "1170px"
   },
   two: {
     display: "flex",
     flexDirection: "row",
     marginLeft: "auto",
     marginRight: "auto",
-    maxWidth: "80%"
+    maxWidth: "970px",
+    alignItems: "center"
   },
   three: {
-    flex: 1
-  },
-  four: {
-    flex: 1
+    flex: 1,
+    marginLeft: "15px",
+    marginRight: "15px",
+    textAlign: "center"
   },
   five: {
     flex: 1,
-    minWidth: "50%"
+    textAlign: "center",
+    maxWidth: "470px",
+    marginRight: "30px"
   },
   studypic: {
-    maxWidth: "400px"
+    flex: 1,
+    maxWidth: "470px"
   },
   centeralign: {
     textAlign: "center"
   },
   icon: {
-    maxWidth: "60%",
-    textAlign: "center"
+    maxWidth: "60%"
   }
 };
 
@@ -53,7 +64,9 @@ const buttonStyles = {
     width: "200px",
     fontSize: "15px",
     fontWeight: "bold",
-    borderRadius: "30px"
+    borderRadius: "30px",
+    fontFamily: "Montserrat",
+    marginTop: "20px"
   }
 };
 
@@ -76,13 +89,9 @@ const Navigation = () => {
   return (
     <div style={styles.navi}>
       <div style={{ flex: 1 }}>
-        <img
-          style={{ maxWidth: "100px", textAlign: "left" }}
-          src={Logo}
-          alt=""
-        />
+        <img style={{ maxWidth: "100px" }} src={Logo} alt="" />
       </div>
-      <div style={{ flex: 1, textAlign: "right" }}>
+      <div style={{ flex: 1 }}>
         <div style={styles.navi}>
           <h4>EXPERTISE</h4>
           <h4>DATA SCIENCE COURSE</h4>
@@ -117,38 +126,49 @@ const Banner = () => {
 
 const Expertise = () => {
   return (
-    <div style={styles.two}>
-      <div style={styles.three}>
-        <img style={styles.icon} src={Learning} alt="" />
-        <h5>Learning</h5>
-        <p>
-          New to Data Science? Not to worry, join our Intro to Data Science
-          course to <strong>learn more</strong>.
-        </p>
-      </div>
-      <div style={styles.four}>
-        <img style={styles.icon} src={Infrastructure} alt="" />
-        <h5>Infrastructure</h5>
-        <p>
-          Half the battle is won with a robust and structured data
-          infrastructure. We can help you to achieve it.
-        </p>
-      </div>
-      <div style={styles.four}>
-        <img style={styles.icon} src={Analytics} alt="" />
-        <h5>Analytics</h5>
-        <p>
-          How can I improve my conversion rate? Why are my products not selling
-          well? Fret not, we can assist you to answer these questions.
-        </p>
-      </div>
-      <div style={styles.four}>
-        <img style={styles.icon} src={Modeling} alt="" />
-        <h5>Modeling</h5>
-        <p>
-          Providing simple yet elegant models to solve your needs is what we
-          thrive for.
-        </p>
+    <div>
+      <h2>EXPERTISE</h2>
+      <div style={styles.one}>
+        <div style={styles.three}>
+          <img style={styles.icon} src={Learning} alt="" />
+          <h5>Learning</h5>
+          <p>
+            New to Data Science? Not to worry, join our Intro to Data Science
+            course to{" "}
+            <span
+              style={{
+                fontWeight: "bold"
+              }}
+            >
+              learn more{""}
+            </span>
+            .
+          </p>
+        </div>
+        <div style={styles.three}>
+          <img style={styles.icon} src={Infrastructure} alt="" />
+          <h5>Infrastructure</h5>
+          <p>
+            Half the battle is won with a robust and structured data
+            infrastructure. We can help you to achieve it.
+          </p>
+        </div>
+        <div style={styles.three}>
+          <img style={styles.icon} src={Analytics} alt="" />
+          <h5>Analytics</h5>
+          <p>
+            How can I improve my conversion rate? Why are my products not
+            selling well? Fret not, we can assist you to answer these questions.
+          </p>
+        </div>
+        <div style={styles.three}>
+          <img style={styles.icon} src={Modeling} alt="" />
+          <h5>Modeling</h5>
+          <p>
+            Providing simple yet elegant models to solve your needs is what we
+            thrive for.
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -156,23 +176,76 @@ const Expertise = () => {
 
 const DSCourse = () => {
   return (
-    <div style={styles.two}>
-      <div style={styles.five}>
-        <p>
-          We are currently still backdating and creating lesson slides for our
-          course. We hope to have it completed by end of February 2019, and
-          translate it into an actual online course on udemy sometime in April
-          2019.
-        </p>
-        <p>
-          As of now, we are teaching every Saturday from 1030 - 1330 at 39
-          Robinson Road, Level 9. Do reach out if you are interested; at the
-          moment, we are at part 8.
-        </p>
-        <MyOwnButton text="Read more" style={{}} />
+    <div>
+      {" "}
+      <h2>DATA SCIENCE COURSE</h2>
+      <div style={styles.two}>
+        <div style={styles.five}>
+          <p>
+            We are currently still backdating and creating lesson slides for our
+            course. We hope to have it completed by end of February 2019, and
+            translate it into an actual online course on udemy sometime in April
+            2019.
+          </p>
+          <p>
+            As of now, we are teaching every Saturday from 1030 - 1330 at 39
+            Robinson Road, Level 9. Do reach out if you are interested; at the
+            moment, we are at part 8.
+          </p>
+          <MyOwnButton text="Read more" style={{}} />
+        </div>
+        <div>
+          <img style={styles.studypic} src={Course} alt="" />
+        </div>
       </div>
-      <div>
-        <img style={styles.studypic} src={Course} alt="" />
+    </div>
+  );
+};
+
+const Team = () => {
+  return (
+    <div>
+      <h2>TEAM</h2>
+      <div style={styles.two}>
+        <div
+          style={{
+            flex: 2,
+            marginRight: "30px"
+          }}
+        >
+          <h5>Our Goals</h5>
+          <p>
+            UpTick is made up of two data science professionals, ShuMing and
+            Timothy. There are a few motivations of starting UpTick.{" "}
+          </p>
+          <p>
+            We hope to <strong>apply data science for SME/start ups</strong>{" "}
+            that might not have considered it or have little funding but still
+            wish to leverage from data science.
+          </p>
+          <p>
+            {" "}
+            We are currently creating an{" "}
+            <strong>online data science course</strong>, that focuses on the
+            mathematical foundation in hope to bridge the gap of understanding
+            the underlying components of (ML) models.{" "}
+          </p>
+          <p>
+            {" "}
+            We hope to educate the public (or clients) with our{" "}
+            <strong>blog</strong>, of what data science can solve and make it
+            relatable with our daily problems and musings.
+          </p>
+        </div>
+        <div style={{ flex: 1 }}>
+          <img
+            style={{
+              maxHeight: "200px"
+            }}
+            src={Fulllogo}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
@@ -181,6 +254,7 @@ const DSCourse = () => {
 const Contact = () => {
   return (
     <div>
+      <h2>CONTACT</h2>
       <h4>Find out how we can help you today! </h4>
       <p style={styles.centeralign}>Email: info@uptick.com </p>
       <p style={styles.centeralign}> Phone: +65 1234 5678 </p>
@@ -194,21 +268,10 @@ const Contact = () => {
 const Main = () => (
   <div>
     <Navigation />
-
     <Banner />
-
-    <h2>EXPERTISE</h2>
-
     <Expertise />
-
-    <h2>DATA SCIENCE COURSE</h2>
-
     <DSCourse />
-
-    <h2>TEAM</h2>
-
-    <h2>CONTACT</h2>
-
+    <Team />
     <Contact />
   </div>
 );
