@@ -7,12 +7,11 @@ const {
   Learning,
   Infrastructure,
   Analytics,
-  Modeling
+  Modeling,
+  Course
 } = Images;
 
 // const Logo = Images.Logo;
-
-const het = "ya";
 
 const styles = {
   one: {
@@ -34,6 +33,13 @@ const styles = {
   four: {
     flex: 1,
     paddingRight: "50px"
+  },
+  five: {
+    flex: 1,
+    minWidth: "50%"
+  },
+  studypic: {
+    maxWidth: "400px"
   },
   icon: {
     maxWidth: "60%",
@@ -105,8 +111,52 @@ const BodyContent = () => {
   );
 };
 
-const Course = () => {
-  return <div>pikachu</div>;
+const MyOwnButton = props => {
+  const { text = "Button", style = {} } = props;
+  return (
+    <button
+      style={{
+        ...props.style,
+        ...style
+      }}
+    >
+      {text}
+    </button>
+  );
+};
+
+const DSCourse = () => {
+  return (
+    <div style={styles.two}>
+      <div style={styles.five}>
+        <p>
+          We are currently still backdating and creating lesson slides for our
+          course. We hope to have it completed by end of February 2019, and
+          translate it into an actual online course on udemy sometime in April
+          2019.
+        </p>
+        <p>
+          As of now, we are teaching every Saturday from 1030 - 1330 at 39
+          Robinson Road, Level 9. Do reach out if you are interested; at the
+          moment, we are at part 8.
+        </p>
+        <MyOwnButton
+          text="Read more"
+          style={{
+            background: "#F2F2F2",
+            height: "50px",
+            width: "200px",
+            fontSize: "15px",
+            fontWeight: "bold",
+            borderRadius: "30px"
+          }}
+        />
+      </div>
+      <div>
+        <img style={styles.studypic} src={Course} alt="" />
+      </div>
+    </div>
+  );
 };
 
 const Main = () => (
@@ -124,7 +174,7 @@ const Main = () => (
 
     <h2>DATA SCIENCE COURSE</h2>
 
-    <Course />
+    <DSCourse />
 
     <h2>TEAM</h2>
 
