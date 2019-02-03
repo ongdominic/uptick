@@ -20,6 +20,10 @@ const styles = {
     flexDirection: "row",
     alignItems: "center"
   },
+  emphasis: {
+    fontSize: "21px",
+    fontWeight: "500"
+  },
   one: {
     display: "flex",
     flexDirection: "row",
@@ -135,17 +139,30 @@ const Banner = () => {
     <div>
       <img
         style={{
-          maxWidth: "100%"
+          flex: 1,
+          maxWidth: "100%",
+          alignItems: "stretch"
         }}
         src={Heroimage}
         alt=""
       />
-      <h1>UpTick</h1>
-      <h3>
-        We love data and the work we do. We work closely with our clients to
-        deliver the best possible solutions for their needs.
-      </h3>
-      <MyOwnButton text="Contact us today" style={{}} />
+      <div
+        style={{
+          position: "absolute",
+          top: "300px",
+          left: "65%",
+          width: "470px",
+          height: "100%",
+          textAlign: "center"
+        }}
+      >
+        <h1>UpTick</h1>
+        <h3>
+          We love data and the work we do. We work closely with our clients to
+          deliver the best possible solutions for their needs.
+        </h3>
+        <MyOwnButton text="Contact us today" style={{}} />
+      </div>
     </div>
   );
 };
@@ -245,22 +262,23 @@ const Team = () => {
             Timothy. There are a few motivations of starting UpTick.{" "}
           </p>
           <p>
-            We hope to <strong>apply data science for SME/start ups</strong>{" "}
+            We hope to apply{" "}
+            <span style={styles.emphasis}>data science for SME/start ups </span>
             that might not have considered it or have little funding but still
             wish to leverage from data science.
           </p>
           <p>
             {" "}
             We are currently creating an{" "}
-            <strong>online data science course</strong>, that focuses on the
-            mathematical foundation in hope to bridge the gap of understanding
-            the underlying components of (ML) models.{" "}
+            <span style={styles.emphasis}>online data science course</span>,
+            that focuses on the mathematical foundation in hope to bridge the
+            gap of understanding the underlying components of (ML) models.{" "}
           </p>
           <p>
             {" "}
             We hope to educate the public (or clients) with our{" "}
-            <strong>blog</strong>, of what data science can solve and make it
-            relatable with our daily problems and musings.
+            <span style={styles.emphasis}>blog</span>, of what data science can
+            solve and make it relatable with our daily problems and musings.
           </p>
         </div>
         <div style={{ flex: 1 }}>
@@ -358,7 +376,7 @@ const Footer = () => {
   return (
     <div
       style={{
-        marginTop: "100px",
+        marginTop: "200px",
         marginLeft: "15%"
       }}
     >
