@@ -16,6 +16,9 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
+  "devDependencies": {
+    "prettier": "^1.16.3"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
