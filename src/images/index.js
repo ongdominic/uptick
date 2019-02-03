@@ -13,11 +13,11 @@ import Timothy from "./timothy.png";
 // default
 export default {
     Modeling,
-    // Heroimage,
-    // Logo, 
-    // Learning,
-    // Analytics,
-    // Infrastructure,
-    // Shuming,
-    // Timothy,
+    Heroimage,
+    Logo, 
+    Learning,
+    Analytics,
+    Infrastructure,
+    Shuming,
+    Timothy,
 }

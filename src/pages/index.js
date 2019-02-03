@@ -1,6 +1,7 @@
 import React from "react";
 import Images from "../images";
-// import Course from "./course.png";
+
+const { Logo, Heroimage , Learning, Infrastructure, Analytics, Modeling } = Images;
 
 const styles = {
   one: {
@@ -100,7 +101,7 @@ const BodyContent = () => {
         style={styles.four}
       >
         <img style={styles.icon}
-        src={Images.Modeling} alt="" />
+        src={Modeling} alt="" />
         <h5>Modeling</h5>
         <p>
           Providing simple yet elegant models to solve your needs is what we
