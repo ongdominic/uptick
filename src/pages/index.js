@@ -9,7 +9,8 @@ const {
   Infrastructure,
   Analytics,
   Modeling,
-  Course
+  Course,
+  Fulllogo
 } = Images;
 
 // const Logo = Images.Logo;
@@ -48,7 +49,7 @@ const styles = {
   }
 };
 
-const HeaderYes = () => {
+const Navigation = () => {
   return (
     <div style={styles.one}>
       <div style={{ flex: 1 }}>
@@ -73,7 +74,7 @@ const HeaderYes = () => {
   );
 };
 
-const BodyContent = () => {
+const Expertise = () => {
   return (
     <div style={styles.two}>
       <div style={styles.three}>
@@ -164,7 +165,7 @@ const DSCourse = () => {
 
 const Main = () => (
   <div>
-    <HeaderYes />
+    <Navigation />
     <img
       style={{
         maxWidth: "100%"
@@ -178,8 +179,10 @@ const Main = () => (
       deliver the best possible solutions for their needs.
     </h3>
     <MyOwnButton text="Contact us today" style={{}} />
+
     <h2>EXPERTISE</h2>
-    <BodyContent />
+
+    <Expertise />
 
     <h2>DATA SCIENCE COURSE</h2>
 
