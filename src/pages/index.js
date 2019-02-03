@@ -5,6 +5,8 @@ const { Logo, Heroimage, Learning, Infrastructure, Analytics, Modeling } = Image
 
 // const Logo = Images.Logo;
 
+const het = "ya"
+
 const styles = {
   one: {
     display: "flex",
