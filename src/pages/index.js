@@ -9,7 +9,9 @@ const {
   Analytics,
   Modeling,
   Course,
-  Fulllogo
+  Fulllogo,
+  Shuming,
+  Timothy
 } = Images;
 
 const styles = {
@@ -39,6 +41,14 @@ const styles = {
     marginRight: "15px",
     textAlign: "center"
   },
+  four: {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: "auto",
+    marginRight: "auto",
+    maxWidth: "970px"
+  },
+
   five: {
     flex: 1,
     textAlign: "center",
@@ -57,13 +67,25 @@ const styles = {
   }
 };
 
+const ColoredLine = ({ color }) => (
+  <hr
+    style={{
+      backgroundColor: color,
+      border: 1,
+      height: 2,
+      maxWidth: "40%",
+      marginTop: "80px"
+    }}
+  />
+);
+
 const buttonStyles = {
   default: {
     background: "#F2F2F2",
     height: "50px",
     width: "200px",
     fontSize: "15px",
-    fontWeight: "medium",
+    fontWeight: "500",
     borderRadius: "30px",
     fontFamily: "Montserrat",
     marginTop: "20px"
@@ -255,6 +277,57 @@ const Team = () => {
   );
 };
 
+const TeamMembers = () => {
+  return (
+    <div>
+      <div
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          maxWidth: "970px"
+        }}
+      >
+        <h5>Team members</h5>
+      </div>
+      <div style={styles.four}>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center",
+            marginRight: "100px"
+          }}
+        >
+          <img style={{ maxWidth: "240px" }} src={Shuming} alt="" />
+          <h5>Peh Shu Ming</h5>
+          <p>
+            I am a Data Scientist at Skyscanner, overlooking its non-flight
+            verticals, and currently working on predictive models for user
+            behavior and SEO ranking. For more information, check out my
+            personal website.
+          </p>
+        </div>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center"
+          }}
+        >
+          <img style={{ maxWidth: "240px" }} src={Timothy} alt="" />
+          <h5>Timothy Ong</h5>
+          <p>
+            {" "}
+            I am currently a Data Analyst at Shopee, an e-commerce company. I am
+            experienced in building and maintaining data pipelines, data
+            reporting, and data visualizations. Being passionate in data
+            analytics, I have decided to help businesses and individuals make
+            better decisions with data.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Contact = () => {
   return (
     <div>
@@ -274,8 +347,12 @@ const Main = () => (
     <Navigation />
     <Banner />
     <Expertise />
+    <ColoredLine color="rgb(59 59 59)" />
     <DSCourse />
+    <ColoredLine color="rgb(59 59 59)" />
     <Team />
+    <TeamMembers />
+    <ColoredLine color="rgb(59 59 59)" />
     <Contact />
   </div>
 );
