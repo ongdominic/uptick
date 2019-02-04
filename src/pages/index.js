@@ -124,11 +124,21 @@ const Navigation = () => {
       </div>
       <div style={{ flex: 1 }}>
         <div style={styles.navi}>
-          <h4>EXPERTISE</h4>
-          <h4>DATA SCIENCE COURSE</h4>
-          <h4>TEAM</h4>
-          <h4>CONTACT</h4>
-          <h4>BLOG</h4>
+          <Link to="/#Expertise">
+            <h4>EXPERTISE</h4>
+          </Link>
+          <Link to="/#DS">
+            <h4>DATA SCIENCE COURSE</h4>
+          </Link>
+          <Link to="/#Team">
+            <h4>TEAM</h4>
+          </Link>
+          <Link to="/#ContactUs">
+            <h4>CONTACT</h4>
+          </Link>
+          <a href="https://www.medium.com">
+            <h4>BLOG</h4>
+          </a>
         </div>
       </div>
     </div>
@@ -170,7 +180,7 @@ const Banner = () => {
 
 const Expertise = () => {
   return (
-    <div>
+    <div id="Expertise">
       <h2>EXPERTISE</h2>
       <div style={styles.one}>
         <div style={styles.three}>
@@ -220,8 +230,7 @@ const Expertise = () => {
 
 const DSCourse = () => {
   return (
-    <div>
-      {" "}
+    <div id="DS">
       <h2>DATA SCIENCE COURSE</h2>
       <div style={styles.two}>
         <div style={styles.five}>
@@ -250,7 +259,7 @@ const DSCourse = () => {
 
 const Team = () => {
   return (
-    <div>
+    <div id="Team">
       <h2>TEAM</h2>
       <div style={styles.two}>
         <div
@@ -363,7 +372,7 @@ const TeamMembers = () => {
 
 const Contact = () => {
   return (
-    <div>
+    <div id="ContactUs">
       <h2>CONTACT</h2>
       <h4>Find out how we can help you today! </h4>
       <p style={styles.centeralign}>Email: info@uptick.com </p>
