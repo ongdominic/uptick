@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 //import Navbar from "react-bootstrap/Navbar";
 import Images from "../images";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const {
@@ -188,7 +188,8 @@ const Banner = () => {
         style={{
           flex: 1,
           maxWidth: "100%",
-          alignItems: "stretch"
+          minWidth: " 100%",
+          maxHeight: "700px"
         }}
         src={Heroimage}
         alt=""
@@ -196,7 +197,7 @@ const Banner = () => {
       <div
         style={{
           position: "absolute",
-          top: "300px",
+          top: "270px",
           left: "65%",
           width: "470px",
           height: "100%",
@@ -379,8 +380,12 @@ const TeamMembers = () => {
             behavior and SEO ranking. For more information, check out my
             personal website.
           </p>
-          <FaGithub style={styles.smicon} />
-          <FaLinkedin style={styles.smicon} />
+          <a href="">
+            <FaGithub style={styles.smicon} />
+          </a>
+          <a href="">
+            <FaLinkedin style={styles.smicon} />
+          </a>
         </div>
         <div
           style={{
@@ -404,8 +409,12 @@ const TeamMembers = () => {
             analytics, I have decided to help businesses and individuals make
             better decisions with data.
           </p>
-          <FaGithub style={styles.smicon} />
-          <FaLinkedin style={styles.smicon} />
+          <a href="">
+            <FaGithub style={styles.smicon} />
+          </a>
+          <a href="">
+            <FaLinkedin style={styles.smicon} />
+          </a>
         </div>
       </div>
     </div>
