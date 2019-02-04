@@ -411,7 +411,7 @@ const Contact = () => {
           style={{
             color: "white"
           }}
-          href="mailto:{info@uptick.com}"
+          href="mailto:info@uptick.com"
         >
           info@uptick.com{" "}
         </a>
