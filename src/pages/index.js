@@ -66,7 +66,8 @@ const styles = {
     maxWidth: "470px"
   },
   centeralign: {
-    textAlign: "center"
+    textAlign: "center",
+    color: "white"
   },
   icon: {
     maxWidth: "60%"
@@ -404,7 +405,17 @@ const Contact = () => {
     <div id="ContactUs">
       <h2>CONTACT</h2>
       <h4>Find out how we can help you today! </h4>
-      <p style={styles.centeralign}>Email: info@uptick.com </p>
+      <p style={styles.centeralign}>
+        Email:{" "}
+        <a
+          style={{
+            color: "white"
+          }}
+          href="mailto:{info@uptick.com}"
+        >
+          info@uptick.com{" "}
+        </a>
+      </p>
       <p style={styles.centeralign}> Phone: +65 1234 5678 </p>
       <p style={styles.centeralign}>
         <em>Ask for our case studies</em>
