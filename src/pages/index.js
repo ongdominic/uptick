@@ -2,6 +2,8 @@ import React from "react";
 import Link from "gatsby-link";
 //import Navbar from "react-bootstrap/Navbar";
 import Images from "../images";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const {
   Logo,
@@ -70,6 +72,13 @@ const styles = {
   },
   icon: {
     maxWidth: "60%"
+  },
+  smicon: {
+    fontSize: "30px",
+    color: "grey",
+    marginLeft: "10px",
+    marginRight: "10px",
+    marginTop: "20px"
   }
 };
 
@@ -370,6 +379,8 @@ const TeamMembers = () => {
             behavior and SEO ranking. For more information, check out my
             personal website.
           </p>
+          <FaGithub style={styles.smicon} />
+          <FaLinkedin style={styles.smicon} />
         </div>
         <div
           style={{
@@ -393,6 +404,8 @@ const TeamMembers = () => {
             analytics, I have decided to help businesses and individuals make
             better decisions with data.
           </p>
+          <FaGithub style={styles.smicon} />
+          <FaLinkedin style={styles.smicon} />
         </div>
       </div>
     </div>
