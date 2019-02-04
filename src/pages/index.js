@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+//import Navbar from "react-bootstrap/Navbar";
 import Images from "../images";
 
 const {
@@ -112,6 +113,32 @@ const MyOwnButton = props => {
   );
 };
 
+// const NewNav = () => {
+//   return (
+//     <Navbar expand="lg">
+//       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+//       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//       <Navbar.Collapse id="basic-navbar-nav">
+//         <Nav className="mr-auto">
+//           <Nav.Link href="#Expertis">EXPERTISE</Nav.Link>
+//           <Nav.Link href="#link">Link</Nav.Link>
+//           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+//             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+//             <NavDropdown.Item href="#action/3.2">
+//               Another action
+//             </NavDropdown.Item>
+//             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+//             <NavDropdown.Divider />
+//             <NavDropdown.Item href="#action/3.4">
+//               Separated link
+//             </NavDropdown.Item>
+//           </NavDropdown>
+//         </Nav>
+//       </Navbar.Collapse>
+//     </Navbar>
+//   );
+// };
+
 const Navigation = () => {
   return (
     <div style={styles.navi}>
@@ -136,7 +163,7 @@ const Navigation = () => {
           <Link to="/#ContactUs" class="navi">
             <h4>CONTACT</h4>
           </Link>
-          <a href="https://www.medium.com" class="navi">
+          <a target="_blank" href="https://www.medium.com" class="navi">
             <h4>BLOG</h4>
           </a>
         </div>
@@ -247,7 +274,7 @@ const DSCourse = () => {
             Robinson Road, Level 9. Do reach out if you are interested; at the
             moment, we are at part 8.
           </p>
-          <a href="https://www.google.com">
+          <a target="_blank" href="https://www.google.com">
             <MyOwnButton text="Read more" style={{}} />
           </a>
         </div>
@@ -405,6 +432,7 @@ const Footer = () => {
 
 const Main = () => (
   <div>
+    {/* <NewNav /> */}
     <Navigation />
     <Banner />
     <Expertise />
