@@ -124,19 +124,19 @@ const Navigation = () => {
       </div>
       <div style={{ flex: 1 }}>
         <div style={styles.navi}>
-          <Link to="/#Expertise">
+          <Link to="/#Expertise" class="navi">
             <h4>EXPERTISE</h4>
           </Link>
-          <Link to="/#DS">
+          <Link to="/#DS" class="navi">
             <h4>DATA SCIENCE COURSE</h4>
           </Link>
-          <Link to="/#Team">
+          <Link to="/#Team" class="navi">
             <h4>TEAM</h4>
           </Link>
-          <Link to="/#ContactUs">
+          <Link to="/#ContactUs" class="navi">
             <h4>CONTACT</h4>
           </Link>
-          <a href="https://www.medium.com">
+          <a href="https://www.medium.com" class="navi">
             <h4>BLOG</h4>
           </a>
         </div>
@@ -172,7 +172,9 @@ const Banner = () => {
           We love data and the work we do. We work closely with our clients to
           deliver the best possible solutions for their needs.
         </h3>
-        <MyOwnButton text="Contact us today" style={{}} />
+        <Link to="/#ContactUs">
+          <MyOwnButton text="Contact us today" />
+        </Link>
       </div>
     </div>
   );
