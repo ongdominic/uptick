@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 import Images from "../images";
 
 const {
@@ -235,7 +236,9 @@ const DSCourse = () => {
             Robinson Road, Level 9. Do reach out if you are interested; at the
             moment, we are at part 8.
           </p>
-          <MyOwnButton text="Read more" style={{}} />
+          <a href="https://www.google.com">
+            <MyOwnButton text="Read more" style={{}} />
+          </a>
         </div>
         <div>
           <img style={styles.studypic} src={Course} alt="" />
