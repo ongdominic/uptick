@@ -145,7 +145,7 @@ const Navigation = () => {
           <Link to="/#ContactUs" class="navi">
             <h4>CONTACT</h4>
           </Link>
-          <a target="_blank" href="https://www.medium.com" class="navi">
+          <a target="_blank" href="https://medium.com/uptick-blog" class="navi">
             <h4>BLOG</h4>
           </a>
         </div>
@@ -257,12 +257,19 @@ const DSCourse = () => {
             Robinson Road, Level 9. Do reach out if you are interested; at the
             moment, we are at part 8.
           </p>
-          <a target="_blank" href="https://www.google.com">
+          <a
+            target="_blank"
+            href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
+          >
             <MyOwnButton text="Read more" style={{}} />
           </a>
         </div>
         <div>
-          <img style={styles.studypic} src={Course} alt="" />
+          <img
+            style={styles.studypic}
+            src={Course}
+            alt="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
+          />
         </div>
       </div>
     </div>
@@ -353,13 +360,16 @@ const TeamMembers = () => {
             behavior and SEO ranking. For more information, check out my{" "}
             <span>
               {" "}
-              <a style={{ color: "white" }} href="">
+              <a
+                style={{ color: "white" }}
+                href="https://shumingpeh.github.io/portfolio/"
+              >
                 personal website
               </a>
             </span>
             .
           </p>
-          <a href="">
+          <a href="https://github.com/shumingpeh">
             <FaGithub style={styles.smicon} />
           </a>
           <a href="">
@@ -388,7 +398,7 @@ const TeamMembers = () => {
             analytics, I have decided to help businesses and individuals make
             better decisions with data.
           </p>
-          <a href="">
+          <a href="https://github.com/ttimong">
             <FaGithub style={styles.smicon} />
           </a>
           <a href="">
@@ -416,7 +426,7 @@ const Contact = () => {
           info@uptick.com{" "}
         </a>
       </p>
-      <p style={styles.centeralign}> Phone: +65 1234 5678 </p>
+      <p style={styles.centeralign}> Phone: +65 9899 0206 </p>
       <p style={styles.centeralign}>
         <em>Ask for our case studies</em>
       </p>
@@ -433,7 +443,7 @@ const Footer = () => {
       }}
     >
       <h6>
-        Designed and developed by Dominic. Icons by freepix from Flaticon.{" "}
+        git Designed and developed by Dominic. Icons by freepix from Flaticon.{" "}
         <br />
         UpTick (c) 2019. All rights reserved.
       </h6>
