@@ -99,7 +99,7 @@ const buttonStyles = {
     height: "50px",
     width: "200px",
     fontSize: "15px",
-    fontWeight: "500",
+    fontWeight: "600",
     borderRadius: "30px",
     fontFamily: "Montserrat",
     marginTop: "20px"
@@ -429,7 +429,7 @@ const Footer = () => {
     <div
       style={{
         marginTop: "200px",
-        marginLeft: "15%"
+        marginLeft: "5%"
       }}
     >
       <h6>
