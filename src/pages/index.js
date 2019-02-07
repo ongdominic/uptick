@@ -159,8 +159,7 @@ const Banner = () => {
       <img
         style={{
           flex: 1,
-          maxWidth: "100%",
-          minWidth: " 100%",
+          minWidth: "100%",
           maxHeight: "700px"
         }}
         src={Heroimage}
