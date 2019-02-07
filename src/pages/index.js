@@ -418,7 +418,7 @@ const TeamMembers = () => {
           <a target="_blank" href="https://github.com/shumingpeh">
             <FaGithub style={styles.smicon} />
           </a>
-          <a href="">
+          <a target="_blank" href="https://www.linkedin.com/in/shuming-peh">
             <FaLinkedin style={styles.smicon} />
           </a>
         </div>
