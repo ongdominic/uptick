@@ -30,7 +30,7 @@ const styles = {
     flexDirection: "row",
     marginLeft: "auto",
     marginRight: "auto",
-    maxWidth: "1170px"
+    maxWidth: "85%"
   },
   two: {
     display: "flex",
@@ -164,6 +164,7 @@ const Banner = () => {
         style={{
           flex: 1,
           minWidth: "100%",
+          maxWidth: "100%",
           maxHeight: "700px"
         }}
         src={Heroimage}
@@ -272,7 +273,7 @@ const DSCourse = () => {
             target="_blank"
             href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
           >
-            <MyOwnButton />
+            <MyOwnButton text="Read more" />
           </a>
         </div>
         <div>
