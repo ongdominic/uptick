@@ -102,6 +102,9 @@ const buttonStyles = {
     borderRadius: "30px",
     fontFamily: "Montserrat",
     marginTop: "20px"
+  },
+  hover: {
+    cursor: "pointer"
   }
 };
 
@@ -111,6 +114,7 @@ const MyOwnButton = props => {
     <button
       style={{
         ...buttonStyles.default,
+        ...buttonStyles.hover,
         ...props.style,
         ...style
       }}
@@ -268,7 +272,7 @@ const DSCourse = () => {
             target="_blank"
             href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
           >
-            <MyOwnButton text="Read more" style={{}} />
+            <MyOwnButton />
           </a>
         </div>
         <div>
