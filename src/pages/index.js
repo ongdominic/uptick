@@ -488,6 +488,7 @@ const Main = () => (
     {/* <NewNav /> */}
     <Navigation />
     <Banner />
+    <ColoredLine color="rgb(59 59 59)" />
     <Expertise />
     <ColoredLine color="rgb(59 59 59)" />
     <DSCourse />
