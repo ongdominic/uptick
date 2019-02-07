@@ -23,8 +23,7 @@ const styles = {
     alignItems: "center"
   },
   emphasis: {
-    fontSize: "21px",
-    fontWeight: "500"
+    fontWeight: "700"
   },
   one: {
     display: "flex",
@@ -206,7 +205,16 @@ const Expertise = () => {
                 fontWeight: "bold"
               }}
             >
-              learn more{""}
+              <a
+                target="_blank"
+                href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
+                style={{
+                  textDecoration: "none",
+                  color: "white"
+                }}
+              >
+                learn more
+              </a>
             </span>
             .
           </p>
@@ -265,11 +273,7 @@ const DSCourse = () => {
           </a>
         </div>
         <div>
-          <img
-            style={styles.studypic}
-            src={Course}
-            alt="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
-          />
+          <img style={styles.studypic} src={Course} alt="" />
         </div>
       </div>
     </div>
@@ -361,7 +365,12 @@ const TeamMembers = () => {
             <span>
               {" "}
               <a
-                style={{ color: "white" }}
+                style={{
+                  color: "white",
+                  textDecoration: "none",
+                  fontWeight: "700"
+                }}
+                target="_blank"
                 href="https://shumingpeh.github.io/portfolio/"
               >
                 personal website
@@ -369,12 +378,6 @@ const TeamMembers = () => {
             </span>
             .
           </p>
-          <a href="https://github.com/shumingpeh">
-            <FaGithub style={styles.smicon} />
-          </a>
-          <a href="">
-            <FaLinkedin style={styles.smicon} />
-          </a>
         </div>
         <div
           style={{
@@ -398,10 +401,33 @@ const TeamMembers = () => {
             analytics, I have decided to help businesses and individuals make
             better decisions with data.
           </p>
-          <a href="https://github.com/ttimong">
+        </div>
+      </div>
+      <div style={styles.four}>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center",
+            marginRight: "100px"
+          }}
+        >
+          <a target="_blank" href="https://github.com/shumingpeh">
             <FaGithub style={styles.smicon} />
           </a>
           <a href="">
+            <FaLinkedin style={styles.smicon} />
+          </a>
+        </div>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center"
+          }}
+        >
+          <a target="_blank" href="https://github.com/ttimong">
+            <FaGithub style={styles.smicon} />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/tim-ong/">
             <FaLinkedin style={styles.smicon} />
           </a>
         </div>
@@ -419,7 +445,9 @@ const Contact = () => {
         Email:{" "}
         <a
           style={{
-            color: "white"
+            color: "white",
+            textDecoration: "none",
+            fontWeight: "700"
           }}
           href="mailto:info@uptick.com"
         >
