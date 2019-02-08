@@ -485,7 +485,6 @@ const Footer = () => {
 
 const Main = () => (
   <div>
-    {/* <NewNav /> */}
     <Navigation />
     <Banner />
     <ColoredLine color="rgb(59 59 59)" />
