@@ -267,7 +267,7 @@ const Navigation = () => {
 const Banner = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 426px)">
+      <MediaQuery query="(min-device-width: 476px)">
         <img
           style={{
             width: "100%",
@@ -296,7 +296,7 @@ const Banner = () => {
           </Link>
         </div>
       </MediaQuery>
-      <MediaQuery query="(max-device-width: 425px)">
+      <MediaQuery query="(max-device-width: 475px)">
         <img
           style={{
             width: "100%",
@@ -335,7 +335,7 @@ const Banner = () => {
 const Expertise = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 426px)">
+      <MediaQuery query="(min-device-width: 476px)">
         <div id="Expertise">
           <h2>EXPERTISE</h2>
           <div style={styles.one}>
@@ -393,7 +393,7 @@ const Expertise = () => {
         </div>
       </MediaQuery>
 
-      <MediaQuery query="(max-device-width: 426px)">
+      <MediaQuery query="(max-device-width: 475px)">
         <div id="Expertise">
           <h2>EXPERTISE</h2>
           <div style={styles.onemobile}>
@@ -457,7 +457,7 @@ const Expertise = () => {
 const DSCourse = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 426px)">
+      <MediaQuery query="(min-device-width: 476px)">
         <div id="DS">
           <h2>DATA SCIENCE COURSE</h2>
           <div style={styles.two}>
@@ -486,7 +486,7 @@ const DSCourse = () => {
           </div>
         </div>
       </MediaQuery>
-      <MediaQuery query="(max-device-width: 426px)">
+      <MediaQuery query="(max-device-width: 475px)">
         <div id="DS">
           <h2>DATA SCIENCE COURSE</h2>
           <div style={styles.twomobile}>
@@ -522,7 +522,7 @@ const DSCourse = () => {
 const Team = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 426px)">
+      <MediaQuery query="(min-device-width: 476px)">
         <div id="Team">
           <h2>TEAM</h2>
           <div style={styles.six}>
@@ -572,7 +572,7 @@ const Team = () => {
           </div>
         </div>
       </MediaQuery>
-      <MediaQuery query="(max-device-width: 426px)">
+      <MediaQuery query="(max-device-width: 475px)">
         <div id="Team">
           <h2>TEAM</h2>
           <div style={styles.sixmobile}>
@@ -625,7 +625,7 @@ const Team = () => {
 const TeamMembers = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 426px)">
+      <MediaQuery query="(min-device-width: 476px)">
         <div>
           <div style={styles.six}>
             <h5>Team Members</h5>
@@ -711,7 +711,7 @@ const TeamMembers = () => {
           </div>
         </div>
       </MediaQuery>
-      <MediaQuery query="(max-device-width: 426px)">
+      <MediaQuery query="(max-device-width: 475px)">
         <div>
           <div style={styles.sixmobile}>
             <h5>Team members</h5>
