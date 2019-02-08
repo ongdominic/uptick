@@ -261,7 +261,7 @@ const Navigation = () => {
 const Banner = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 769px)">
+      <MediaQuery query="(min-device-width: 426px)">
         <img
           style={{
             width: "100%",
@@ -290,7 +290,7 @@ const Banner = () => {
           </Link>
         </div>
       </MediaQuery>
-      <MediaQuery query="(max-device-width: 768px)">
+      <MediaQuery query="(max-device-width: 425px)">
         <img
           style={{
             width: "100%",
