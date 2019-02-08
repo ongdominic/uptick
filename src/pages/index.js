@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
 import Images from "../images";
-import { FaGithub, FaLinkedin, FaBars, FaAutoprefixer } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBars } from "react-icons/fa";
 import MediaQuery from "react-responsive";
+import Navbar from "./nav"
 
 const {
   Logo,
@@ -229,7 +230,7 @@ const Navigation = () => {
             />
           </div>
           <div>
-            <FaBars style={styles.NaviItemmobile}/>
+            <Navbar />
             {/* <div style={styles.NaviItem}>
               <Link to="/#Expertise" class="navi">
                 <h4>EXPERTISE</h4>

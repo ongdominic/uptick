@@ -16,6 +16,7 @@
     "bootstrap": "^4.2.1",
     "gatsby": "^2.0.107",
     "react": "^16.7.0",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.7.0",
     "react-icons": "^3.3.0",
     "react-responsive": "^6.1.1"
