@@ -682,7 +682,7 @@ const TeamMembers = () => {
                 </div>
                 <div style={styles.TeamMembersmobile}>
                   <img
-                    style={{ Width: "170px", paddingTop: "50px" }}
+                    style={{ maxWidth: "240px", paddingTop: "50px" }}
                     src={Timothy}
                     alt=""
                   />
