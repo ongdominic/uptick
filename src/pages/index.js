@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Images from "../images";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import MediaQuery from "react-responsive";
 
 const {
   Logo,
@@ -19,9 +20,12 @@ const {
 const styles = {
   navi: {
     display: "flex",
-    flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    justifyContent: "space-between"
   },
+
+  NaviItem: { display: "flex", flexDirection: "row", marginRight: "55px" },
+
   emphasis: {
     fontWeight: "700"
   },
@@ -32,19 +36,40 @@ const styles = {
     marginRight: "auto",
     maxWidth: "85%"
   },
-  two: {
-    display: "flex",
-    flexDirection: "row",
-    marginLeft: "auto",
-    marginRight: "auto",
-    maxWidth: "970px",
-    alignItems: "center"
-  },
   three: {
     flex: 1,
     marginLeft: "15px",
     marginRight: "15px",
     textAlign: "center"
+  },
+  two: {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: "auto",
+    marginRight: "auto",
+    maxWidth: "70%",
+    alignItems: "center"
+  },
+  five: {
+    textAlign: "center",
+    maxWidth: "50%",
+    marginRight: "auto",
+    marginLeft: "auto",
+    paddingRight: "30px"
+  },
+  studypic: {
+    marginRight: "auto",
+    marginLeft: "auto",
+    textAlign: "center",
+    maxWidth: "100%"
+  },
+  six: {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: "auto",
+    marginRight: "auto",
+    maxWidth: "55%",
+    alignItems: "center"
   },
   four: {
     display: "flex",
@@ -53,20 +78,16 @@ const styles = {
     marginRight: "auto",
     maxWidth: "970px"
   },
-
-  five: {
-    flex: 1,
-    textAlign: "center",
-    maxWidth: "470px",
-    marginRight: "30px"
-  },
-  studypic: {
-    flex: 1,
-    maxWidth: "470px"
-  },
   centeralign: {
     textAlign: "center",
     color: "white"
+  },
+  TeamMembers: {
+    display: "flex",
+    maxWidth: "50%",
+    flexDirection: "column",
+    textAlign: "center",
+    alignItems: "center"
   },
   icon: {
     maxWidth: "60%"
@@ -75,8 +96,7 @@ const styles = {
     fontSize: "30px",
     color: "grey",
     marginLeft: "10px",
-    marginRight: "10px",
-    marginTop: "20px"
+    marginRight: "10px"
   }
 };
 
@@ -127,15 +147,15 @@ const MyOwnButton = props => {
 const Navigation = () => {
   return (
     <div style={styles.navi}>
-      <div style={{ flex: 1 }}>
+      <div>
         <img
           style={{ maxWidth: "100px", marginLeft: "55px" }}
           src={Logo}
           alt=""
         />
       </div>
-      <div style={{ flex: 1 }}>
-        <div style={styles.navi}>
+      <div>
+        <div style={styles.NaviItem}>
           <Link to="/#Expertise" class="navi">
             <h4>EXPERTISE</h4>
           </Link>
@@ -162,7 +182,6 @@ const Banner = () => {
     <div>
       <img
         style={{
-          flex: 1,
           minWidth: "100%",
           maxWidth: "100%",
           maxHeight: "700px"
@@ -288,10 +307,9 @@ const Team = () => {
   return (
     <div id="Team">
       <h2>TEAM</h2>
-      <div style={styles.two}>
+      <div style={styles.six}>
         <div
           style={{
-            flex: 2,
             marginRight: "30px"
           }}
         >
@@ -320,7 +338,7 @@ const Team = () => {
             solve and make it relatable with our daily problems and musings.
           </p>
         </div>
-        <div style={{ flex: 1 }}>
+        <div>
           <img
             style={{
               maxHeight: "200px"
@@ -337,103 +355,82 @@ const Team = () => {
 const TeamMembers = () => {
   return (
     <div>
-      <div
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: "970px"
-        }}
-      >
+      <div style={styles.six}>
         <h5>Team members</h5>
       </div>
-      <div style={styles.four}>
-        <div
-          style={{
-            flex: 1,
-            textAlign: "center",
-            marginRight: "100px"
-          }}
-        >
-          <img style={{ maxWidth: "240px" }} src={Shuming} alt="" />
-          <h5>Peh Shu Ming</h5>
-          <p
-            style={{
-              maxWidth: "80%",
-              marginLeft: "auto",
-              marginRight: "auto"
-            }}
-          >
-            I am a Data Scientist at Skyscanner, overlooking its non-flight
-            verticals, and currently working on predictive models for user
-            behavior and SEO ranking. For more information, check out my{" "}
-            <span>
-              {" "}
-              <a
+      <div style={styles.six}>
+        <div>
+          <div style={{ display: "flex" }}>
+            <div style={styles.TeamMembers}>
+              <img style={{ maxWidth: "240px" }} src={Shuming} alt="" />
+              <h5>Peh Shu Ming</h5>
+              <p
                 style={{
-                  color: "white",
-                  textDecoration: "none",
-                  fontWeight: "700"
+                  maxWidth: "80%",
+                  height: "180px"
                 }}
-                target="_blank"
-                href="https://shumingpeh.github.io/portfolio/"
               >
-                personal website
-              </a>
-            </span>
-            .
-          </p>
-        </div>
-        <div
-          style={{
-            flex: 1,
-            textAlign: "center"
-          }}
-        >
-          <img style={{ maxWidth: "240px" }} src={Timothy} alt="" />
-          <h5>Timothy Ong</h5>
-          <p
-            style={{
-              maxWidth: "80%",
-              marginLeft: "auto",
-              marginRight: "auto"
-            }}
-          >
-            {" "}
-            I am currently a Data Analyst at Shopee, an e-commerce company. I am
-            experienced in building and maintaining data pipelines, data
-            reporting, and data visualizations. Being passionate in data
-            analytics, I have decided to help businesses and individuals make
-            better decisions with data.
-          </p>
-        </div>
-      </div>
-      <div style={styles.four}>
-        <div
-          style={{
-            flex: 1,
-            textAlign: "center",
-            marginRight: "100px"
-          }}
-        >
-          <a target="_blank" href="https://github.com/shumingpeh">
-            <FaGithub style={styles.smicon} />
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/shuming-peh">
-            <FaLinkedin style={styles.smicon} />
-          </a>
-        </div>
-        <div
-          style={{
-            flex: 1,
-            textAlign: "center"
-          }}
-        >
-          <a target="_blank" href="https://github.com/ttimong">
-            <FaGithub style={styles.smicon} />
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/tim-ong/">
-            <FaLinkedin style={styles.smicon} />
-          </a>
+                I am a Data Scientist at Skyscanner, overlooking its non-flight
+                verticals, and currently working on predictive models for user
+                behavior and SEO ranking. For more information, check out my{" "}
+                <span>
+                  {" "}
+                  <a
+                    style={{
+                      color: "white",
+                      textDecoration: "none",
+                      fontWeight: "700"
+                    }}
+                    target="_blank"
+                    href="https://shumingpeh.github.io/portfolio/"
+                  >
+                    personal website
+                  </a>
+                </span>
+                .
+              </p>
+              <div styles={{ display: "flex" }}>
+                <a target="_blank" href="https://github.com/shumingpeh">
+                  <FaGithub style={styles.smicon} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/shuming-peh"
+                >
+                  <FaLinkedin style={styles.smicon} />
+                </a>
+              </div>
+            </div>
+            <div style={styles.TeamMembers}>
+              <img style={{ maxWidth: "240px" }} src={Timothy} alt="" />
+              <h5>Timothy Ong</h5>
+              <p
+                style={{
+                  maxWidth: "80%",
+                  height: "180px"
+                }}
+              >
+                I am currently a Data Analyst at Shopee, an e-commerce company.
+                I am experienced in building and maintaining data pipelines,
+                data reporting, and data visualizations. Being passionate in
+                data analytics, I have decided to help businesses and
+                individuals make better decisions with data.
+              </p>
+              <div
+                styles={{
+                  display: "flex",
+                  alignSelf: "flex-end"
+                }}
+              >
+                <a target="_blank" href="https://github.com/ttimong">
+                  <FaGithub style={styles.smicon} />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/tim-ong/">
+                  <FaLinkedin style={styles.smicon} />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

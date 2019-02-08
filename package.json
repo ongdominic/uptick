@@ -17,7 +17,8 @@
     "gatsby": "^2.0.107",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-icons": "^3.3.0"
+    "react-icons": "^3.3.0",
+    "react-responsive": "^6.1.1"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
