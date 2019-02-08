@@ -47,7 +47,8 @@ const styles = {
   three: {
     marginLeft: "15px",
     marginRight: "15px",
-    textAlign: "center"
+    textAlign: "center",
+    flex: "1"
   },
   threemobile: {
     marginTop: "20px",
@@ -124,6 +125,7 @@ const styles = {
     alignItems: "center"
   },
   icon: {
+    width: "170px",
     maxWidth: "60%"
   },
   smicon: {
@@ -225,7 +227,6 @@ const Banner = () => {
       <MediaQuery query="(min-device-width: 426px)">
         <img
           style={{
-            minWidth: "100%",
             maxWidth: "100%",
             maxHeight: "700px"
           }}
@@ -681,7 +682,7 @@ const TeamMembers = () => {
                 </div>
                 <div style={styles.TeamMembersmobile}>
                   <img
-                    style={{ maxWidth: "240px", paddingTop: "50px" }}
+                    style={{ Width: "170px", paddingTop: "50px" }}
                     src={Timothy}
                     alt=""
                   />
