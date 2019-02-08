@@ -227,7 +227,7 @@ const Banner = () => {
       <MediaQuery query="(min-device-width: 426px)">
         <img
           style={{
-            Width: "100%"
+            width: "100%"
           }}
           src={Heroimage}
           alt=""
