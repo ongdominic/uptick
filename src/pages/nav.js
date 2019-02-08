@@ -47,7 +47,7 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <div style={styles.menutrue} onClick={this.handleClick}>
+        <div onClick={this.handleClick}>
           <FaBars style={styles.NaviItemmobile} />
         </div>
 
