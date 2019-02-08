@@ -24,8 +24,12 @@ class NavBar extends Component {
         display: "flex",
         flexDirection:"column",
         alignSelf:"flex-end",
+        position:"absolute",
+        right: "24px",
+        background:"rgb(10, 10, 10)",
+        zIndex:"1"
       },
-      NaviItemmobile: { alignSelf: "flex-end",
+      NaviItemmobile: { alignSelf: "flex-end", display:"initial",
         marginRight: "36px", fontSize:"24px" },
     }
     return (
