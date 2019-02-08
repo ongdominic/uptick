@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import Images from "../images";
 import { FaGithub, FaLinkedin, FaBars } from "react-icons/fa";
 import MediaQuery from "react-responsive";
-import Navbar from "./nav"
+import Navbar from "./nav";
 
 const {
   Logo,
@@ -27,7 +27,12 @@ const styles = {
   },
 
   NaviItem: { display: "flex", flexDirection: "row", marginRight: "55px" },
-  NaviItemmobile: { display: "flex", flexDirection: "row", marginRight: "36px", fontSize:"24px" },
+  NaviItemmobile: {
+    display: "flex",
+    flexDirection: "row",
+    marginRight: "36px",
+    fontSize: "24px"
+  },
 
   emphasis: {
     fontWeight: "700"
@@ -190,7 +195,7 @@ const Navigation = () => {
         <div style={styles.navi}>
           <div>
             <img
-              style={{ maxWidth: "100px", marginLeft: "55px" }}
+              style={{ maxWidth: "100px", marginLeft: "20%" }}
               src={Logo}
               alt=""
             />
@@ -295,7 +300,7 @@ const Banner = () => {
         <img
           style={{
             width: "100%",
-            height: "700px",
+            height: "700px"
           }}
           src={MobileBanner}
           alt=""
@@ -309,8 +314,8 @@ const Banner = () => {
             width: "85%",
             height: "100%",
             textAlign: "center",
-            marginLeft:"auto",
-            marginRight:"auto",
+            marginLeft: "auto",
+            marginRight: "auto"
           }}
         >
           <h1>UpTick</h1>
@@ -623,7 +628,7 @@ const TeamMembers = () => {
       <MediaQuery query="(min-device-width: 426px)">
         <div>
           <div style={styles.six}>
-            <h5>Team members</h5>
+            <h5>Team Members</h5>
           </div>
           <div style={styles.six}>
             <div>
@@ -820,11 +825,11 @@ const Footer = () => {
     <div
       style={{
         marginTop: "200px",
-        marginLeft: "5%"
+        marginLeft: "3%"
       }}
     >
       <h6>
-        Designed and developed by Dominic. Icons by freepix from Flaticon.{" "}
+        Designed and developed by Dominic. Icons by freepix from Flaticon.
         <br />
         UpTick (c) 2019. All rights reserved.
       </h6>
