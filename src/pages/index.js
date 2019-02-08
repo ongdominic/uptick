@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Images from "../images";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBars, FaAutoprefixer } from "react-icons/fa";
 import MediaQuery from "react-responsive";
 
 const {
@@ -14,7 +14,8 @@ const {
   Course,
   Fulllogo,
   Shuming,
-  Timothy
+  Timothy,
+  MobileBanner
 } = Images;
 
 const styles = {
@@ -25,6 +26,7 @@ const styles = {
   },
 
   NaviItem: { display: "flex", flexDirection: "row", marginRight: "55px" },
+  NaviItemmobile: { display: "flex", flexDirection: "row", marginRight: "36px", fontSize:"24px" },
 
   emphasis: {
     fontWeight: "700"
@@ -183,7 +185,7 @@ const MyOwnButton = props => {
 const Navigation = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 426px)">
+      <MediaQuery query="(min-device-width: 769px)">
         <div style={styles.navi}>
           <div>
             <img
@@ -217,6 +219,41 @@ const Navigation = () => {
           </div>
         </div>
       </MediaQuery>
+      <MediaQuery query="(max-device-width: 768px)">
+        <div style={styles.navi}>
+          <div>
+            <img
+              style={{ maxWidth: "100px", marginLeft: "16px" }}
+              src={Logo}
+              alt=""
+            />
+          </div>
+          <div>
+            <FaBars style={styles.NaviItemmobile}/>
+            {/* <div style={styles.NaviItem}>
+              <Link to="/#Expertise" class="navi">
+                <h4>EXPERTISE</h4>
+              </Link>
+              <Link to="/#DS" class="navi">
+                <h4>DATA SCIENCE COURSE</h4>
+              </Link>
+              <Link to="/#Team" class="navi">
+                <h4>TEAM</h4>
+              </Link>
+              <Link to="/#ContactUs" class="navi">
+                <h4>CONTACT</h4>
+              </Link>
+              <a
+                target="_blank"
+                href="https://medium.com/uptick-blog"
+                class="navi"
+              >
+                <h4>BLOG</h4>
+              </a>
+            </div> */}
+          </div>
+        </div>
+      </MediaQuery>
     </div>
   );
 };
@@ -224,7 +261,7 @@ const Navigation = () => {
 const Banner = () => {
   return (
     <div>
-      <MediaQuery query="(min-device-width: 426px)">
+      <MediaQuery query="(min-device-width: 769px)">
         <img
           style={{
             width: "100%",
@@ -241,6 +278,38 @@ const Banner = () => {
             width: "470px",
             height: "100%",
             textAlign: "center"
+          }}
+        >
+          <h1>UpTick</h1>
+          <h3>
+            We love data and the work we do. We work closely with our clients to
+            deliver the best possible solutions for their needs.
+          </h3>
+          <Link to="/#ContactUs">
+            <MyOwnButton text="Contact us today" />
+          </Link>
+        </div>
+      </MediaQuery>
+      <MediaQuery query="(max-device-width: 768px)">
+        <img
+          style={{
+            width: "100%",
+            height: "700px",
+          }}
+          src={MobileBanner}
+          alt=""
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: "300px",
+            left: 0,
+            right: 0,
+            width: "85%",
+            height: "100%",
+            textAlign: "center",
+            marginLeft:"auto",
+            marginRight:"auto",
           }}
         >
           <h1>UpTick</h1>

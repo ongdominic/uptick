@@ -8,6 +8,7 @@ import Course from "./course.png";
 import Fulllogo from "./fulllogo.png";
 import Shuming from "./shumingpeh.png";
 import Timothy from "./timothy.png";
+import MobileBanner from "./mobilebanner.png"
 
 // // named export
 // export const noOfLines = 10;
@@ -23,5 +24,6 @@ export default {
   Course,
   Fulllogo,
   Shuming,
-  Timothy
+  Timothy,
+  MobileBanner
 };
