@@ -2,36 +2,43 @@ import React, { Component } from 'react';
 import { FaBars } from "react-icons/fa";
 import Link from "gatsby-link";
 
+const styles = {
+  menufalse:{
+    display: "none"
+  },
+  menutrue:{
+    display: "flex",
+    flexDirection:"column",
+    alignSelf:"flex-end",
+    position:"absolute",
+    right: "24px",
+    background:"rgb(10, 10, 10)",
+    zIndex:"1"
+  },
+  NaviItemmobile: { 
+    alignSelf: "flex-end", 
+    display:"initial",
+    marginRight: "36px", 
+    fontSize:"24px" 
+  },
+}
+
 class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    onSelected: false
-  };
-  this.handleClick = this.handleClick.bind(this);
-}
+      onSelected: false
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  
   handleClick() {
     this.setState(state => ({
       onSelected: !state.onSelected
     }));
   }
+  
   render() {
-    const styles = {
-      menufalse:{
-        display: "none"
-      },
-      menutrue:{
-        display: "flex",
-        flexDirection:"column",
-        alignSelf:"flex-end",
-        position:"absolute",
-        right: "24px",
-        background:"rgb(10, 10, 10)",
-        zIndex:"1"
-      },
-      NaviItemmobile: { alignSelf: "flex-end", display:"initial",
-        marginRight: "36px", fontSize:"24px" },
-    }
     return (
       <div>
         {this.state.onSelected ? (
