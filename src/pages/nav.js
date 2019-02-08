@@ -47,7 +47,11 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        {this.state.onSelected ? (
+        <div style={styles.menutrue} onClick={this.handleClick}>
+          <FaBars style={styles.NaviItemmobile} />
+        </div>
+
+        {this.state.onSelected && (
           <div>
             <div style={styles.menutrue}>
               <Link
@@ -78,21 +82,6 @@ class NavBar extends Component {
                 <h4>BLOG</h4>
               </a>
             </div>
-          </div>
-        ) : (
-          <div
-            style={
-              this.state.onSelected === true
-                ? styles.menufalse
-                : styles.menutrue
-            }
-            onClick={() => {
-              this.setState({
-                onSelected: true
-              });
-            }}
-          >
-            <FaBars style={styles.NaviItemmobile} />
           </div>
         )}
       </div>
