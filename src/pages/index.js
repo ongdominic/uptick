@@ -274,8 +274,8 @@ const Banner = () => {
           style={{
             position: "absolute",
             top: "270px",
-            left: "65%",
-            width: "470px",
+            left: "60%",
+            width: "400px",
             height: "100%",
             textAlign: "center"
           }}
