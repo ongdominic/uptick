@@ -829,7 +829,7 @@ const Footer = () => {
       }}
     >
       <h6>
-        Designed and developed by Dominic. Icons by freepix from Flaticon..
+        Designed and developed by Dominic. Icons by freepix from Flaticon.
         <br />
         UpTick (c) 2019. All rights reserved.
       </h6>
