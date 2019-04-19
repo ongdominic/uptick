@@ -463,15 +463,10 @@ const DSCourse = () => {
           <div style={styles.two}>
             <div style={styles.five}>
               <p>
-                We are currently still backdating and creating lesson slides for
-                our course. We hope to have it completed by end of February
-                2019, and translate it into an actual online course on udemy
-                sometime in April 2019.
+                We are currently still backdating and creating lesson slides for our course. We hope to have it completed this year, and translate it into an actual online course on udemy sometime late this year too.
               </p>
               <p>
-                As of now, we are teaching every Saturday from 1030 - 1330 at 39
-                Robinson Road, Level 9. Do reach out if you are interested; at
-                the moment, we are at part 8.
+                Do reach out if you are interested!
               </p>
               <a
                 target="_blank"
