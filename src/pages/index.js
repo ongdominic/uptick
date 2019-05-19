@@ -532,7 +532,7 @@ const Team = () => {
               </p>
               <p>
                 UpTick hopes to apply{" "}
-                <span sWe aretyle={styles.emphasis}>
+                <span style={styles.emphasis}>
                   data science for SME/start ups{" "}
                 </span>
                 that might not have considered it or have little funding but
@@ -577,9 +577,7 @@ const Team = () => {
               </p>
               <p>
                 UpTick hopes to apply{" "}
-                <span style={styles.emphasis}>
-                  data science for SME/start ups{" "}
-                </span>
+                <span style={styles.emphasis}>data science for SME/start ups{" "}</span>
                 that might not have considered it or have little funding but
                 still wish to leverage from data science.
               </p>
