@@ -15,7 +15,6 @@ const {
   Course,
   Fulllogo,
   Shuming,
-  Timothy,
   MobileBanner
 } = Images;
 
