@@ -528,12 +528,11 @@ const Team = () => {
             >
               <h5>Our Goals</h5>
               <p>
-                UpTick is made up of two data science professionals, ShuMing and
-                Timothy. There are a few motivations of starting UpTick.{" "}
+                UpTick is made up of a data science professional, ShuMing. There are a few motivations of starting UpTick.
               </p>
               <p>
-                We hope to apply{" "}
-                <span style={styles.emphasis}>
+                UpTick hopes to apply{" "}
+                <span sWe aretyle={styles.emphasis}>
                   data science for SME/start ups{" "}
                 </span>
                 that might not have considered it or have little funding but
@@ -541,7 +540,7 @@ const Team = () => {
               </p>
               <p>
                 {" "}
-                We are currently creating an{" "}
+                UpTick is currently creating an{" "}
                 <span style={styles.emphasis}>online data science course</span>,
                 that focuses on the mathematical foundation in hope to bridge
                 the gap of understanding the underlying components of (ML)
@@ -549,7 +548,7 @@ const Team = () => {
               </p>
               <p>
                 {" "}
-                We hope to educate the public (or clients) with our{" "}
+                UpTick hopes to educate the public (or clients) with our{" "}
                 <span style={styles.emphasis}>blog</span>, of what data science
                 can solve and make it relatable with our daily problems and
                 musings.
@@ -574,11 +573,10 @@ const Team = () => {
             <div>
               <h5>Our Goals</h5>
               <p>
-                UpTick is made up of two data science professionals, ShuMing and
-                Timothy. There are a few motivations of starting UpTick.{" "}
+                UpTick is made up of a data science professional, ShuMing. There are a few motivations of starting UpTick.
               </p>
               <p>
-                We hope to apply{" "}
+                UpTick hopes to apply{" "}
                 <span style={styles.emphasis}>
                   data science for SME/start ups{" "}
                 </span>
@@ -586,16 +584,14 @@ const Team = () => {
                 still wish to leverage from data science.
               </p>
               <p>
-                {" "}
-                We are currently creating an{" "}
+                UpTick is currently creating an{" "}
                 <span style={styles.emphasis}>online data science course</span>,
                 that focuses on the mathematical foundation in hope to bridge
                 the gap of understanding the underlying components of (ML)
-                models.{" "}
+                models.
               </p>
               <p>
-                {" "}
-                We hope to educate the public (or clients) with our{" "}
+                UpTick hopes to educate the public (or clients) with our{" "}
                 <span style={styles.emphasis}>blog</span>, of what data science
                 can solve and make it relatable with our daily problems and
                 musings.
@@ -623,7 +619,7 @@ const TeamMembers = () => {
       <MediaQuery query="(min-device-width: 476px)">
         <div>
           <div style={styles.six}>
-            <h5>Team Members</h5>
+            <h5>Team Member</h5>
           </div>
           <div style={styles.six}>
             <div>
@@ -669,38 +665,6 @@ const TeamMembers = () => {
                     </a>
                   </div>
                 </div>
-                <div style={styles.TeamMembers}>
-                  <img style={{ maxWidth: "240px" }} src={Timothy} alt="" />
-                  <h5>Timothy Ong</h5>
-                  <p
-                    style={{
-                      maxWidth: "80%",
-                      height: "180px"
-                    }}
-                  >
-                    I am currently a Data Analyst at Shopee, an e-commerce
-                    company. I am experienced in building and maintaining data
-                    pipelines, data reporting, and data visualizations. Being
-                    passionate in data analytics, I have decided to help
-                    businesses and individuals make better decisions with data.
-                  </p>
-                  <div
-                    styles={{
-                      display: "flex",
-                      alignSelf: "flex-end"
-                    }}
-                  >
-                    <a target="_blank" href="https://github.com/ttimong">
-                      <FaGithub style={styles.smicon} />
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://www.linkedin.com/in/tim-ong/"
-                    >
-                      <FaLinkedin style={styles.smicon} />
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -709,7 +673,7 @@ const TeamMembers = () => {
       <MediaQuery query="(max-device-width: 475px)">
         <div>
           <div style={styles.sixmobile}>
-            <h5>Team members</h5>
+            <h5>Team member</h5>
           </div>
           <div style={styles.sixmobile}>
             <div>
@@ -745,36 +709,6 @@ const TeamMembers = () => {
                     <a
                       target="_blank"
                       href="https://www.linkedin.com/in/shuming-peh"
-                    >
-                      <FaLinkedin style={styles.smicon} />
-                    </a>
-                  </div>
-                </div>
-                <div style={styles.TeamMembersmobile}>
-                  <img
-                    style={{ maxWidth: "240px", paddingTop: "50px" }}
-                    src={Timothy}
-                    alt=""
-                  />
-                  <h5>Timothy Ong</h5>
-                  <p>
-                    I am currently a Data Analyst at Shopee, an e-commerce
-                    company. I am experienced in building and maintaining data
-                    pipelines, data reporting, and data visualizations. Being
-                    passionate in data analytics, I have decided to help
-                    businesses and individuals make better decisions with data.
-                  </p>
-                  <div
-                    styles={{
-                      display: "flex"
-                    }}
-                  >
-                    <a target="_blank" href="https://github.com/ttimong">
-                      <FaGithub style={styles.smicon} />
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://www.linkedin.com/in/tim-ong/"
                     >
                       <FaLinkedin style={styles.smicon} />
                     </a>
