@@ -486,15 +486,10 @@ const DSCourse = () => {
           <div style={styles.twomobile}>
             <div style={styles.fivemobile}>
               <p>
-                We are currently still backdating and creating lesson slides for
-                our course. We hope to have it completed by end of February
-                2019, and translate it into an actual online course on udemy
-                sometime in April 2019.
+                We are currently still backdating and creating lesson slides for our course. We hope to have it completed this year, and translate it into an actual online course on udemy sometime late this year too.
               </p>
               <p>
-                As of now, we are teaching every Saturday from 1030 - 1330 at 39
-                Robinson Road, Level 9. Do reach out if you are interested; at
-                the moment, we are at part 8.
+                Do reach out if you are interested!
               </p>
               <a
                 target="_blank"
@@ -527,7 +522,7 @@ const Team = () => {
             >
               <h5>Our Goals</h5>
               <p>
-                UpTick is made up of a data science professional, ShuMing. There are a few motivations of starting UpTick.
+                UpTick is made up of a data science professional, Shu Ming. There are a few motivations of starting UpTick.
               </p>
               <p>
                 UpTick hopes to apply{" "}
@@ -572,7 +567,7 @@ const Team = () => {
             <div>
               <h5>Our Goals</h5>
               <p>
-                UpTick is made up of a data science professional, ShuMing. There are a few motivations of starting UpTick.
+                UpTick is made up of a data science professional, Shu Ming. There are a few motivations of starting UpTick.
               </p>
               <p>
                 UpTick hopes to apply{" "}
