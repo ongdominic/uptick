@@ -8,7 +8,7 @@ import Navbar from "./nav";
 const {
   Logo,
   Heroimage,
-  Learning,
+  // Learning,
   Infrastructure,
   Analytics,
   Modeling,
@@ -338,31 +338,31 @@ const Expertise = () => {
         <div id="Expertise">
           <h2>EXPERTISE</h2>
           <div style={styles.one}>
-            <div style={styles.three}>
-              <img style={styles.icon} src={Learning} alt="" />
-              <h5>Learning</h5>
-              <p>
-                New to Data Science? Not to worry, join our Intro to Data
-                Science course to{" "}
-                <span
-                  style={{
-                    fontWeight: "bold"
-                  }}
-                >
-                  <a
-                    target="_blank"
-                    href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
-                    style={{
-                      textDecoration: "none",
-                      color: "white"
-                    }}
-                  >
-                    learn more
-                  </a>
-                </span>
-                .
-              </p>
-            </div>
+            // <div style={styles.three}>
+            //   <img style={styles.icon} src={Learning} alt="" />
+            //   <h5>Learning</h5>
+            //   <p>
+            //     New to Data Science? Not to worry, join our Intro to Data
+            //     Science course to{" "}
+            //     <span
+            //       style={{
+            //         fontWeight: "bold"
+            //       }}
+            //     >
+            //       <a
+            //         target="_blank"
+            //         href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
+            //         style={{
+            //           textDecoration: "none",
+            //           color: "white"
+            //         }}
+            //       >
+            //         learn more
+            //       </a>
+            //     </span>
+            //     .
+            //   </p>
+            // </div>
             <div style={styles.three}>
               <img style={styles.icon} src={Infrastructure} alt="" />
               <h5>Infrastructure</h5>
@@ -396,31 +396,31 @@ const Expertise = () => {
         <div id="Expertise">
           <h2>EXPERTISE</h2>
           <div style={styles.onemobile}>
-            <div style={styles.threemobile}>
-              <img style={styles.icon} src={Learning} alt="" />
-              <h5>Learning</h5>
-              <p>
-                New to Data Science? Not to worry, join our Intro to Data
-                Science course to{" "}
-                <span
-                  style={{
-                    fontWeight: "bold"
-                  }}
-                >
-                  <a
-                    target="_blank"
-                    href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
-                    style={{
-                      textDecoration: "none",
-                      color: "white"
-                    }}
-                  >
-                    learn more
-                  </a>
-                </span>
-                .
-              </p>
-            </div>
+            // <div style={styles.threemobile}>
+            //   <img style={styles.icon} src={Learning} alt="" />
+            //   <h5>Learning</h5>
+            //   <p>
+            //     New to Data Science? Not to worry, join our Intro to Data
+            //     Science course to{" "}
+            //     <span
+            //       style={{
+            //         fontWeight: "bold"
+            //       }}
+            //     >
+            //       <a
+            //         target="_blank"
+            //         href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
+            //         style={{
+            //           textDecoration: "none",
+            //           color: "white"
+            //         }}
+            //       >
+            //         learn more
+            //       </a>
+            //     </span>
+            //     .
+            //   </p>
+            // </div>
             <div style={styles.threemobile}>
               <img style={styles.icon} src={Infrastructure} alt="" />
               <h5>Infrastructure</h5>
