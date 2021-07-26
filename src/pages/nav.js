@@ -61,9 +61,9 @@ class NavBar extends Component {
               >
                 <h4>EXPERTISE</h4>
               </Link>
-              <Link to="/#DS" onClick={this.closeOnSelected} class="navi">
-                <h4>DATA SCIENCE COURSE</h4>
-              </Link>
+              // <Link to="/#DS" onClick={this.closeOnSelected} class="navi">
+              //   <h4>DATA SCIENCE COURSE</h4>
+              // </Link>
               <Link to="/#Team" onClick={this.closeOnSelected} class="navi">
                 <h4>TEAM</h4>
               </Link>
