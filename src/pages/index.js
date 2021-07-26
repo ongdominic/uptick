@@ -204,9 +204,9 @@ const Navigation = () => {
               <Link to="/#Expertise" class="navi">
                 <h4>EXPERTISE</h4>
               </Link>
-              <Link to="/#DS" class="navi">
-                <h4>DATA SCIENCE COURSE</h4>
-              </Link>
+              // <Link to="/#DS" class="navi">
+              //   <h4>DATA SCIENCE COURSE</h4>
+              // </Link>
               <Link to="/#Team" class="navi">
                 <h4>TEAM</h4>
               </Link>
@@ -239,9 +239,9 @@ const Navigation = () => {
               <Link to="/#Expertise" class="navi">
                 <h4>EXPERTISE</h4>
               </Link>
-              <Link to="/#DS" class="navi">
-                <h4>DATA SCIENCE COURSE</h4>
-              </Link>
+              // <Link to="/#DS" class="navi">
+              //   <h4>DATA SCIENCE COURSE</h4>
+              // </Link>
               <Link to="/#Team" class="navi">
                 <h4>TEAM</h4>
               </Link>
@@ -453,61 +453,6 @@ const Expertise = () => {
   );
 };
 
-const DSCourse = () => {
-  return (
-    <div>
-      <MediaQuery query="(min-device-width: 476px)">
-        <div id="DS">
-          <h2>DATA SCIENCE COURSE</h2>
-          <div style={styles.two}>
-            <div style={styles.five}>
-              <p>
-                We are currently still backdating and creating lesson slides for our course. We hope to have it completed this year, and translate it into an actual online course on udemy sometime late this year too.
-              </p>
-              <p>
-                Do reach out if you are interested!
-              </p>
-              <a
-                target="_blank"
-                href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
-              >
-                <MyOwnButton text="Read more" />
-              </a>
-            </div>
-            <div>
-              <img style={styles.studypic} src={Course} alt="" />
-            </div>
-          </div>
-        </div>
-      </MediaQuery>
-      <MediaQuery query="(max-device-width: 475px)">
-        <div id="DS">
-          <h2>DATA SCIENCE COURSE</h2>
-          <div style={styles.twomobile}>
-            <div style={styles.fivemobile}>
-              <p>
-                We are currently still backdating and creating lesson slides for our course. We hope to have it completed this year, and translate it into an actual online course on udemy sometime late this year too.
-              </p>
-              <p>
-                Do reach out if you are interested!
-              </p>
-              <a
-                target="_blank"
-                href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
-              >
-                <MyOwnButton text="Read more" />
-              </a>
-            </div>
-            <div>
-              <img style={styles.studypic} src={Course} alt="" />
-            </div>
-          </div>
-        </div>
-      </MediaQuery>
-    </div>
-  );
-};
-
 const Team = () => {
   return (
     <div>
@@ -522,7 +467,7 @@ const Team = () => {
             >
               <h5>Our Goals</h5>
               <p>
-                UpTick is made up of a data science professional, Shu Ming. There are a few motivations of starting UpTick.
+                UpTick is made up of a data science professional, Shu Ming. There are a couple motivations of starting UpTick.
               </p>
               <p>
                 UpTick hopes to apply{" "}
@@ -531,14 +476,6 @@ const Team = () => {
                 </span>
                 that might not have considered it or have little funding but
                 still wish to leverage from data science.
-              </p>
-              <p>
-                {" "}
-                UpTick is currently creating an{" "}
-                <span style={styles.emphasis}>online data science course</span>,
-                that focuses on the mathematical foundation in hope to bridge
-                the gap of understanding the underlying components of (ML)
-                models.{" "}
               </p>
               <p>
                 {" "}
@@ -574,13 +511,6 @@ const Team = () => {
                 <span style={styles.emphasis}>data science for SME/start ups{" "}</span>
                 that might not have considered it or have little funding but
                 still wish to leverage from data science.
-              </p>
-              <p>
-                UpTick is currently creating an{" "}
-                <span style={styles.emphasis}>online data science course</span>,
-                that focuses on the mathematical foundation in hope to bridge
-                the gap of understanding the underlying components of (ML)
-                models.
               </p>
               <p>
                 UpTick hopes to educate the public (or clients) with our{" "}
