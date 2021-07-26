@@ -625,10 +625,8 @@ const TeamMembers = () => {
                       height: "180px"
                     }}
                   >
-                    I am a Data Scientist at Skyscanner, overlooking its
-                    non-flight verticals, and currently working on predictive
-                    models for user behavior and SEO ranking. For more
-                    information, check out my{" "}
+                    I am a Senior Machine Learning Engineer at ShopBack, building
+                    recommendation engines. For more information, check out my{" "}
                     <span>
                       {" "}
                       <a
@@ -674,10 +672,8 @@ const TeamMembers = () => {
                   <img style={{ maxWidth: "240px" }} src={Shuming} alt="" />
                   <h5>Peh Shu Ming</h5>
                   <p>
-                    I am a Data Scientist at Skyscanner, overlooking its
-                    non-flight verticals, and currently working on predictive
-                    models for user behavior and SEO ranking. For more
-                    information, check out my{" "}
+                    I am a Senior Machine Learning Engineer at ShopBack, building
+                    recommendation engines. For more information, check out my{" "}
                     <span>
                       {" "}
                       <a
