@@ -8,11 +8,9 @@ import Navbar from "./nav";
 const {
   Logo,
   Heroimage,
-  // Learning,
   Infrastructure,
   Analytics,
   Modeling,
-  Course,
   Fulllogo,
   Shuming,
   MobileBanner
@@ -204,9 +202,6 @@ const Navigation = () => {
               <Link to="/#Expertise" class="navi">
                 <h4>EXPERTISE</h4>
               </Link>
-              // <Link to="/#DS" class="navi">
-              //   <h4>DATA SCIENCE COURSE</h4>
-              // </Link>
               <Link to="/#Team" class="navi">
                 <h4>TEAM</h4>
               </Link>
@@ -338,31 +333,6 @@ const Expertise = () => {
         <div id="Expertise">
           <h2>EXPERTISE</h2>
           <div style={styles.one}>
-            // <div style={styles.three}>
-            //   <img style={styles.icon} src={Learning} alt="" />
-            //   <h5>Learning</h5>
-            //   <p>
-            //     New to Data Science? Not to worry, join our Intro to Data
-            //     Science course to{" "}
-            //     <span
-            //       style={{
-            //         fontWeight: "bold"
-            //       }}
-            //     >
-            //       <a
-            //         target="_blank"
-            //         href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
-            //         style={{
-            //           textDecoration: "none",
-            //           color: "white"
-            //         }}
-            //       >
-            //         learn more
-            //       </a>
-            //     </span>
-            //     .
-            //   </p>
-            // </div>
             <div style={styles.three}>
               <img style={styles.icon} src={Infrastructure} alt="" />
               <h5>Infrastructure</h5>
@@ -396,31 +366,6 @@ const Expertise = () => {
         <div id="Expertise">
           <h2>EXPERTISE</h2>
           <div style={styles.onemobile}>
-            // <div style={styles.threemobile}>
-            //   <img style={styles.icon} src={Learning} alt="" />
-            //   <h5>Learning</h5>
-            //   <p>
-            //     New to Data Science? Not to worry, join our Intro to Data
-            //     Science course to{" "}
-            //     <span
-            //       style={{
-            //         fontWeight: "bold"
-            //       }}
-            //     >
-            //       <a
-            //         target="_blank"
-            //         href="https://github.com/shumingpeh/weekly-data-science/blob/master/README.md"
-            //         style={{
-            //           textDecoration: "none",
-            //           color: "white"
-            //         }}
-            //       >
-            //         learn more
-            //       </a>
-            //     </span>
-            //     .
-            //   </p>
-            // </div>
             <div style={styles.threemobile}>
               <img style={styles.icon} src={Infrastructure} alt="" />
               <h5>Infrastructure</h5>
@@ -690,8 +635,6 @@ const Main = () => (
     <Banner />
     <ColoredLine color="rgb(59 59 59)" />
     <Expertise />
-    <ColoredLine color="rgb(59 59 59)" />
-    <DSCourse />
     <ColoredLine color="rgb(59 59 59)" />
     <Team />
     <TeamMembers />
